@@ -23,7 +23,7 @@ def game_logic():
 
 
 def main():
-    desc = 'Answer "yes" if the number is prime, otherwise answer is "no".'
+    desc = 'Answer "yes" if given number is prime. Otherwise answer "no"'
     run(game_logic, desc)
 
 
