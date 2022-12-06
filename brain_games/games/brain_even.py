@@ -14,7 +14,7 @@ def game_logic():
 
 
 def main():
-    desc = "Answer 'yes' if number even otherwise answer 'no'."
+    desc = 'Answer "yes" if the number is even, otherwise answer "no".'
     run(game_logic, desc)
 
 
