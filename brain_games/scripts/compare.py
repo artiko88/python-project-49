@@ -3,14 +3,14 @@ import prompt
 import brain_games.cli
 
 
-def compare(question, right_answer):
+def compare(question, right_ans):
     print(f'Question: {question}')
-    answer = prompt.string('Your answer:')
-    if answer == str(right_answer):
+    ans = prompt.string('Your answer:')
+    if ans == str(right_ans):
         print('Correct!')
         return 'correct'
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was '{right_ans}'.")
         print(f"Let's try again, {brain_games.cli.name}!")
         return 'wrong'
 
