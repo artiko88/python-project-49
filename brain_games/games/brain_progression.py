@@ -19,7 +19,7 @@ def game_logic():
 
 
 def main():
-    desc = 'What number is missing in this progression?'
+    desc = 'What number is missing in the progression?'
     run(game_logic, desc)
 
 
