@@ -9,7 +9,7 @@ def game_logic():
     progression = list(range(start, 40, step))
     randindx = randint(0, len(progression) - 1)
     prog_question = progression.copy()
-    prog_question[randindx] = '...'
+    prog_question[randindx] = '..'
     question = str()
     for _ in range(0, len(progression)):
         question += str(prog_question[_])
