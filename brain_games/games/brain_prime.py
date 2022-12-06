@@ -17,14 +17,14 @@ def is_prime(n):
 
 def game_logic():
     n = randint(1, 500)
-    print('Answer "yes" if the number is prime, otherwise answer is "no".')
     answer = is_prime(n)
     question = n
     return question, answer
 
 
 def main():
-    run(game_logic)
+    desc = 'Answer "yes" if the number is prime, otherwise answer is "no".'
+    run(game_logic, desc)
 
 
 if __name__ == '__main__':

@@ -14,7 +14,8 @@ def game_logic():
 
 
 def main():
-    run(game_logic)
+    desc = "Answer 'yes' if number even otherwise answer 'no'."
+    run(game_logic, desc)
 
 
 if __name__ == '__main__':

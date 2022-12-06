@@ -15,7 +15,8 @@ def game_logic():
 
 
 def main():
-    run(game_logic)
+    desc = 'What is the result of the expression?'
+    run(game_logic, desc)
 
 
 if __name__ == '__main__':

@@ -16,6 +16,8 @@ Short description of all games:
 - brain-prime - a random number is presented and player has to answer wether the number is prime or not.
 
 Minimal requirments:
+python 3.8+
+
 
 
 

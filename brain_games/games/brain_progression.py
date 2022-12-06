@@ -19,7 +19,8 @@ def game_logic():
 
 
 def main():
-    run(game_logic)
+    desc = 'What number is missing in this progression?'
+    run(game_logic, desc)
 
 
 if __name__ == '__main__':

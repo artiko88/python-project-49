@@ -19,7 +19,8 @@ def game_logic():
 
 
 def main():
-    run(game_logic)
+    desc = 'Find the greatest common divisor of given numbers.'
+    run(game_logic, desc)
 
 
 if __name__ == '__main__':
