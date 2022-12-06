@@ -11,6 +11,7 @@ def compare(question, right_answer):
         return 'correct'
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+        print(f"Let's try again, {brain_games.cli.name}!")
         return 'wrong'
 
 
