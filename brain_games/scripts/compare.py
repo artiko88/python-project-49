@@ -26,4 +26,4 @@ def run(game, desc):
         else:
             wrong_count += 1
         if correct_count == 3:
-            print(f'Congratulations, {brain_games.cli.name}')
+            print(f'Congratulations, {brain_games.cli.name}!')
