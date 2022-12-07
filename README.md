@@ -21,11 +21,19 @@ Poetry 1.2.2
 
 Build and installation process:
 git clone https://github.com/artiko88/python-project-49.git
-make 
+
+make install
+
+make build
+
+make package-install
 
 
 
 
+
+Build and installation asciinema:
+https://asciinema.org/a/S7HeQXlddJoUn6NMZpeHHMmoo
 
 Link to brain-even asciinema:
 https://asciinema.org/a/ow5udnjdWtV7PaPiP7xpmSMDb

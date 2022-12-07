@@ -3,8 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "A set of simple brain-games"
 authors = ["Arty Ko <artiko88@gmail.com>"]
+repository = 'https://github.com/artiko88/python-project-49.git'
+classifiers = 'python 3.8+, prompt 0.4.1+'
 readme = "README.md"
-#packages = [{include = "hexlet_code"}]
 packages = [
   { include = "brain_games" },
 ]
