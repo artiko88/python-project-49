@@ -1,22 +1,20 @@
-#!/usr/bin/env python3
-from brain_games.scripts.compare import run
 from random import randint
 
 
-def game_logic():
-    number = randint(1, 100)
-    question = number
+def is_even(number):
     if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+def game_logic():
+    question = randint(1, 100)
+    if is_even(question):
         answer = 'yes'
     else:
         answer = 'no'
     return question, answer
 
 
-def main():
-    desc = 'Answer "yes" if the number is even, otherwise answer "no".'
-    run(game_logic, desc)
-
-
-if __name__ == '__main__':
-    main()
+DESC = 'Answer "yes" if the number is even, otherwise answer "no".'

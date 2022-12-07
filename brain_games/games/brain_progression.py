@@ -1,27 +1,23 @@
-#!/usr/bin/env python3
-from brain_games.scripts.compare import run
 from random import randint
 
 
-def game_logic():
+def generate_progression():
     start = randint(1, 10)
     step = randint(1, 6)
     progression = list(range(start, 40, step))
-    randindx = randint(0, len(progression) - 1)
-    prog_question = progression.copy()
-    prog_question[randindx] = '..'
-    question = str()
+    return progression
+
+
+def game_logic():
+    progression = generate_progression()
+    random_index = randint(0, len(progression) - 1)
+    answer = progression[random_index]
+    progression[random_index] = '..'
+    question = ''
     for _ in range(0, len(progression)):
-        question += str(prog_question[_])
+        question += str(progression[_])
         question += ' '
-    answer = progression[randindx]
     return question, answer
 
 
-def main():
-    desc = 'What number is missing in the progression?'
-    run(game_logic, desc)
-
-
-if __name__ == '__main__':
-    main()
+DESC = 'What number is missing in the progression?'

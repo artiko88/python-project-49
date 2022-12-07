@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-from brain_games.scripts.compare import run
 from random import randint
 
 
@@ -11,17 +9,11 @@ def gcd(a, b):
 
 
 def game_logic():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    question = f'{number1} {number2}'
-    answer = gcd(number1, number2)
+    random_number_1 = randint(1, 100)
+    random_number_2 = randint(1, 100)
+    question = f'{random_number_1} {random_number_2}'
+    answer = gcd(random_number_1, random_number_2)
     return question, answer
 
 
-def main():
-    desc = 'Find the greatest common divisor of given numbers.'
-    run(game_logic, desc)
-
-
-if __name__ == '__main__':
-    main()
+DESC = 'Find the greatest common divisor of given numbers.'

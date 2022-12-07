@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/artiko88/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/artiko88/python-project-49/actions)
-"!https://api.codeclimate.com/v1/badges/d3fa2f08f20ad4f4903c/maintainability!":https://codeclimate.com/github/artiko88/python-project-49/maintainability
+[![Maintainability](https://api.codeclimate.com/v1/badges/d3fa2f08f20ad4f4903c/maintainability)](https://codeclimate.com/github/artiko88/python-project-49/maintainability)
 
 Файл README.md содержит описание проекта, минимальные требования, инструкции по установке и запуску, а также встроенную asciinema каждого шага.
 
@@ -17,6 +17,11 @@ Short description of all games:
 
 Minimal requirments:
 python 3.8+
+Poetry 1.2.2
+
+Build and installation process:
+git clone https://github.com/artiko88/python-project-49.git
+make 
 
 
 

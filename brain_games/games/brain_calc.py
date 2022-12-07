@@ -1,23 +1,16 @@
-#!/usr/bin/env python3
-from brain_games.scripts.compare import run
 from random import randint
 from random import choice
 
+OPS = '+-*'
+
 
 def game_logic():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    ops = '+-*'
-    op = choice(ops)
-    question = f'{number1} {op} {number2}'
+    random_number_1 = randint(1, 100)
+    random_number_2 = randint(1, 100)
+    op = choice(OPS)
+    question = f'{random_number_1} {op} {random_number_2}'
     answer = eval(question)
     return question, answer
 
 
-def main():
-    desc = 'What is the result of the expression?'
-    run(game_logic, desc)
-
-
-if __name__ == '__main__':
-    main()
+DESC = 'What is the result of the expression?'
