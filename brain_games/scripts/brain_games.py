@@ -1,21 +1,9 @@
 #!/usr/bin/env python3
-import prompt
-
-
-def get_name():
-    name = prompt.string('May I have your name? ')
-    return name
-
-
-def greet():
-    print("Welcome to the Brain Games!")
-    global name
-    name = get_name()
-    print(f'Hello, {name}!')
+from brain_games.cli import welcome_user
 
 
 def main():
-    greet()
+    welcome_user()
 
 
 if __name__ == '__main__':

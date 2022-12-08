@@ -1,5 +1,7 @@
 from random import randint
 
+RULE = 'Find the greatest common divisor of given numbers.'
+
 
 def gcd(a, b):
     if b == 0:
@@ -14,6 +16,3 @@ def game_logic():
     question = f'{random_number_1} {random_number_2}'
     answer = gcd(random_number_1, random_number_2)
     return question, answer
-
-
-DESC = 'Find the greatest common divisor of given numbers.'

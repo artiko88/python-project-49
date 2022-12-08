@@ -1,10 +1,12 @@
 from random import randint
 
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def is_prime(n):
-    if n > 1:
-        for i in range(2, int(n / 2) + 1):
-            if (n % i) == 0:
+
+def is_prime(num):
+    if num > 1:
+        for i in range(2, int(num / 2) + 1):
+            if (num % i) == 0:
                 return False
         else:
             return True
@@ -20,6 +22,3 @@ def game_logic():
     else:
         answer = 'no'
     return question, answer
-
-
-DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'

@@ -1,25 +1,14 @@
 import prompt
 
 
-def get_name():
-    global name
-    name = prompt.string('May I have your name? ')
-    return name
-
-
-def greet():
+def run(game):
     print("Welcome to the Brain Games!")
-    name = get_name()
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-
-
-def run(game, desc):
-    greet()
-    print(desc)
+    print(game.RULE)
     correct_count = 0
-    wrong_count = 0
-    while correct_count < 3 and wrong_count == 0:
-        question, r_ans = game()
+    while correct_count < 3:
+        question, r_ans = game.game_logic()
         print(f'Question: {question}')
         ans = prompt.string('Your answer:')
         if ans == str(r_ans):
@@ -28,6 +17,6 @@ def run(game, desc):
         else:
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{r_ans}'.")
             print(f"Let's try again, {name}!")
-            wrong_count += 1
+            return
         if correct_count == 3:
             print(f'Congratulations, {name}!')
