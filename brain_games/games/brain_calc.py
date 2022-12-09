@@ -22,7 +22,7 @@ def game_logic():
     random_number_2 = randint(1, 100)
     random_operator = choice(OPERATORS)
     question = f'{random_number_1} {random_operator} {random_number_2}'
-    answer = random_expression(random_number_1,
-                               random_number_2,
-                               random_operator)
+    answer = get_expression_result(random_number_1,
+                                   random_number_2,
+                                   random_operator)
     return question, answer
