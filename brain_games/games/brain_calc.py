@@ -5,7 +5,7 @@ RULE = 'What is the result of the expression?'
 OPERATORS = '+-*'
 
 
-def random_expression(num1, num2, random_operator):
+def get_expression_result(num1, num2, random_operator):
     if random_operator == '+':
         answer = num1 + num2
         return answer
