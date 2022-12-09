@@ -4,16 +4,13 @@ RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+    return number % 2 == 0
 
 
 def game_logic():
-    question = randint(1, 100)
-    if is_even(question):
+    random_number = randint(1, 100)
+    if is_even(random_number):
         answer = 'yes'
     else:
         answer = 'no'
-    return question, answer
+    return random_number, answer

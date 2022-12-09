@@ -3,16 +3,13 @@ from random import randint
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num):
-    if num > 1:
-        for i in range(2, int(num / 2) + 1):
-            if (num % i) == 0:
-                return False
-        else:
-            return True
-    # If the number is less than 1, its also not a prime number.
-    else:
+def is_prime(number):
+    if number <= 1:  # Negative numbers can't be prime
         return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
 
 
 def game_logic():
