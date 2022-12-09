@@ -20,10 +20,13 @@ Poetry 1.2.2
 Build and installation process:
 git clone https://github.com/artiko88/python-project-49.git
 
+To install the projectwith all dependencies:
 make install
 
+To build wheels:
 make build
 
+To install package with poetry scripts:
 make package-install
 
 
